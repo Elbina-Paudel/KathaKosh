@@ -120,8 +120,8 @@ nav ul li a {
 }
 
 
-.logo{
-  font-family:Helvetica;
+.logo {
+  font-family: Helvetica;
   font-size: 32px;
   background-image: url(../images/icons/vector-pen.svg);
   background-repeat: no-repeat;
@@ -215,7 +215,8 @@ button:hover {
   animation: slide 5s linear infinite;
 }
 
-.slider img ,.click-me{
+.slider img,
+.click-me {
   width: 300px;
   height: 200px;
   object-fit: cover;
@@ -232,7 +233,8 @@ button:hover {
     transform: translateX(-300px);
   }
 }
-span{
+
+span {
   color: #f03417;
   size: 50px;
 }
