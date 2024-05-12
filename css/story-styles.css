@@ -5,21 +5,12 @@ body {
     background-color: #f7f7f7;
 }
 
-.sidebar {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 8px;
+.article{
+    background-color: antiquewhite;
+    background-size: cover;
+    margin: 20px 30px;
+    padding: 20px 10px;
 }
-
-.chapter-dropdown {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-}
-
-
 /* slider-container */
 .slider-container {
     margin-top: 10%;
