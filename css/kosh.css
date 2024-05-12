@@ -10,14 +10,15 @@
   padding: 10px;
   cursor: pointer;
 }
+
 .video-thumbnail {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-#carouselExampleCaptions{
- margin-top: 20px;
- height: 100vh;
- width: 100%;
+#carouselExampleCaptions {
+  margin-top: 20px;
+  height: 100vh;
+  width: 100%;
 }

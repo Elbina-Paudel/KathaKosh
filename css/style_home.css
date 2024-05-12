@@ -27,8 +27,8 @@ body::after {
 body::before {
   background: var(--third-glow);
   border-radius: 50%;
-  width: 50vw;
-  height: 50vw;
+  width: 20vw;
+  height: 20vw;
   margin-left: -200px;
   filter: blur(90px);
   top: calc(50vh - 50vw/2);
@@ -38,8 +38,8 @@ body::before {
 body::after {
   background: var(--secondary-glow);
   border-radius: 50%;
-  width: 500px;
-  height: 700px;
+  width: 200px;
+  height: 300px;
   filter: blur(90px);
   top: calc(50vh - 50vw/2);
   left: calc(50vw - 50vw/2);
@@ -55,8 +55,13 @@ body::after {
 
   }
 
+  75% {
+    transform: translateY(-200px) scale(0.2);
+
+  }
+
   100% {
-    transform: translateY(0);
+    transform: translateY(100);
   }
 }
 
@@ -76,7 +81,7 @@ body::after {
   }
 
   100% {
-    transform: translateX(0);
+    transform: translateX(100);
   }
 }
 
@@ -91,6 +96,7 @@ body::after {
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
+  overflow: hidden;
 }
 
 header nav {
@@ -129,15 +135,17 @@ nav ul li a {
 
 }
 
-.kathaButton, .koshButton{
+.kathaButton,
+.koshButton {
   font-family: Helvetica;
   font-size: 12px;
   padding: 10px;
   background-color: #f03417;
-  border-radius: 10px ;
+  border-radius: 10px;
   color: #f8f5f1;
 
 }
+
 main {
   margin: 20px;
   color: var(--text-color);
