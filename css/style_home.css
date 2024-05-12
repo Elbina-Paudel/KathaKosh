@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  overflow: hidden;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding:10px;
+  gap:10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+main {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#first-heading {
+  animation: fadeIn 1s ease-in 2s forwards;
+}
+
+#second-heading {
+  animation: fadeIn 1s ease-in 3s forwards;
+}
+
+#third-heading {
+  animation: fadeIn 1s ease-in 5s forwards;
+}
+.hero{
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50%;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50%;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #b63b1c;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #b25943;
+}
+
+.quote{
+  position: absolute;
+  top: 20%;
+  right: 15%;
+}
+
+/* slider-container */
+.slider-container {
+  width: 100%;
+  position: relative;
+  height: 200px;
+}
+
+.slider {
+  display: flex;
+  animation: slide 5s linear infinite;
+}
+
+.slider img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-300px);
+  }
+}
+
+/* Katha css  */
+
+#fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* kosh css */
+
+.scroll-text {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
+
+
