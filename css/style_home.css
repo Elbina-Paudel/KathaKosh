@@ -91,7 +91,6 @@ body::after {
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
-  overflow: hidden;
 }
 
 header nav {
@@ -130,6 +129,15 @@ nav ul li a {
 
 }
 
+.kathaButton, .koshButton{
+  font-family: Helvetica;
+  font-size: 12px;
+  padding: 10px;
+  background-color: #f03417;
+  border-radius: 10px ;
+  color: #f8f5f1;
+
+}
 main {
   margin: 20px;
   color: var(--text-color);
