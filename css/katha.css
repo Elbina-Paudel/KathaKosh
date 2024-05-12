@@ -49,29 +49,6 @@ body:after {
 .bottom-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-
-.click-me{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-
-}
-
-#writeButton {
-    background-image: url(../images/icons/pencil-square.svg);
-}
-
-#readButton {
-    background-image: url(../images/icons/book.svg);
-}
-
-#writeButton,
-#readButton {
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 15px;
-
+    justify-content: space-around;
+    gap: 50px;
 }

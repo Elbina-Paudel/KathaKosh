@@ -1,9 +1,5 @@
 
-.scroll-text {
-    opacity: 0;
-    transition: opacity 0.5s ease;
+  .container{
+margin-top: 20px;
   }
-  
-  .show {
-    opacity: 1;
-  }
+

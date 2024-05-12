@@ -6,8 +6,10 @@ function goToKoshPage() {
     window.location.href = 'kosh.html';
 }
 
+
 document.getElementById('kathaButton').addEventListener('click', goToKathaPage);
 document.getElementById('koshButton').addEventListener('click', goToKoshPage);
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.getElementById('imageSlider');
@@ -22,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         slider.appendChild(img); 
     });
 });
+
 
     // Function to check scroll direction
     let lastScrollTop = 0;
