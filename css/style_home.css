@@ -119,6 +119,19 @@ nav ul li a {
   text-decoration: none;
 }
 
+
+.logo{
+  font-family:Helvetica;
+  font-size: 32px;
+  fill:#f03417;
+  background-image: url(../images/icons/vector-pen.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+  word-spacing: 1.5em;
+
+}
+
 main {
   margin: 20px;
   color: var(--text-color);
@@ -208,6 +221,8 @@ button:hover {
   width: 300px;
   height: 200px;
   object-fit: cover;
+  border-radius: 10px;
+
 }
 
 @keyframes slide {
@@ -219,15 +234,7 @@ button:hover {
     transform: translateX(-300px);
   }
 }
-
-
-/* kosh css */
-
-.scroll-text {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.show {
-  opacity: 1;
+span{
+  color: #f03417;
+  size: 50px;
 }
