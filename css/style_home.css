@@ -96,7 +96,7 @@ body::after {
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header nav {
@@ -138,12 +138,16 @@ nav ul li a {
 .kathaButton,
 .koshButton {
   font-family: Helvetica;
-  font-size: 12px;
-  padding: 10px;
+  font-size: 15px;
+  padding: 15px;
   background-color: #f03417;
   border-radius: 10px;
   color: #f8f5f1;
 
+}
+
+.nepal {
+  mix-blend-mode: multiply;
 }
 
 main {
@@ -192,6 +196,31 @@ main {
 
 h1 {
   color: var(--text-color);
+  font-family: Helvetica;
+  font-size: 32px;
+}
+
+span {
+  color: #f03417;
+  size: 50px;
+}
+
+div {
+  position: relative;
+  align-items: center;
+
+}
+
+.box-1 {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translate(-20px);
+}
+
+.box-2 {
+  position: absolute;
+  left: 20%;
 }
 
 .hero-content {
@@ -199,12 +228,10 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50%;
   align-items: center;
 }
 
 button {
-  padding: 10px 20px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
@@ -216,41 +243,4 @@ button {
 
 button:hover {
   background-color: #ff7d46;
-}
-
-/* slider-container */
-.slider-container {
-  margin-top: 10%;
-  width: 100%;
-  position: relative;
-  height: 200px;
-}
-
-.slider {
-  display: flex;
-  animation: slide 5s linear infinite;
-}
-
-.slider img,
-.click-me {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-300px);
-  }
-}
-
-span {
-  color: #f03417;
-  size: 50px;
 }
