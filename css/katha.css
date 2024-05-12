@@ -1,0 +1,45 @@
+/* Katha css  */
+body:after{
+    display: none;
+}
+
+#fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .image{
+    border: 10px;
+  }
+  .image {
+    height: auto; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    position: relative; 
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+}
+  
+  @keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }

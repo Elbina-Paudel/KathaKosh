@@ -1,3 +1,92 @@
+
+:root{
+  --text-color: #2b2b2b;
+  --primary-color:#fa561f;
+  --secondary-color:#ff7d46;
+    --secondary-glow: conic-gradient(
+      from 10deg at 50% 50%,
+      #f8f5f1 55deg,
+      #f03417 0deg,
+      #fb7100 160deg,
+      transparent 360deg
+    );
+  
+    --third-glow: conic-gradient(
+      from 90deg at 50% 50%,
+      #ffffff 0deg,
+      #ef4a039b 160deg,
+      #fa561f 120deg,
+      #ff7d46 55deg,
+      transparent 360deg
+    );
+  }
+
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  opacity:0.8
+}
+
+body::before {
+  background: var(--third-glow);
+  border-radius: 50%;
+  width: 50vw;
+  height: 50vw;
+  margin-left: -200px;
+  filter:blur(90px);  
+  top: calc(50vh - 50vw/2);
+  left: calc(50vw );
+}
+
+body::after {
+  background: var(--secondary-glow);
+  border-radius: 50%;
+  width: 500px;
+  height: 700px;
+  filter:blur(90px);
+  top: calc(50vh - 50vw/2);
+  left: calc(50vw - 50vw/2);
+}
+
+@keyframes animateBefore {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(200px) scale(0.2);
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes animateAfter{
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-250px) scale(1.5);
+
+  }
+  75%{
+    transform: translateX(250px) scale(1.5);
+
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+body::before {
+  animation: animateBefore 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
+
+body::after {
+  animation: animateAfter 7s cubic-bezier(0.47, 0, 0.745, 0.715) infinite;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
@@ -25,12 +114,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000000;
+  color: var(--text-color);
   text-decoration: none;
 }
 
 main {
   margin: 20px;
+  color: var(--text-color) ;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -71,7 +161,11 @@ main {
   gap: 50%;
 }
 
+h1{
+  color: var(--text-color);
+}
 .hero-content{
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -86,22 +180,17 @@ button {
   border-radius: 5px;
   cursor: pointer;
   margin-right: 10px;
-  background-color: #b63b1c;
+  background-color:#fa561f;
   color: #fff;
 }
 
 button:hover {
-  background-color: #b25943;
-}
-
-.quote{
-  position: absolute;
-  top: 20%;
-  right: 15%;
+  background-color: #ff7d46;
 }
 
 /* slider-container */
 .slider-container {
+  margin-top: 10%;
   width: 100%;
   position: relative;
   height: 200px;
@@ -125,26 +214,6 @@ button:hover {
 
   100% {
     transform: translateX(-300px);
-  }
-}
-
-/* Katha css  */
-
-#fade-in-delay {
-  opacity: 0;
-  animation: fadeIn 0.5s ease-in-out forwards;
-  animation-delay: 1s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
 
