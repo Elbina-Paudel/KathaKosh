@@ -42,7 +42,7 @@ color:#f03417 ;}
 .hook-line {
   width: 2px;
   height: 50%;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   margin: 0 auto;
 }
 
