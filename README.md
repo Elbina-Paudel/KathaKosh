@@ -1,4 +1,4 @@
-KATHAKOSH
+<h1>KATHAKOSH</h1>
 
 ![image](https://github.com/PunamDahal/KathaKosh/assets/104304324/bd877a41-16dd-458e-8c7c-6f462f2b606b)
 
