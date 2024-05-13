@@ -4,3 +4,7 @@
 
 A way to bring the generational, communication, and technological gap causing CULTURAL DISCONNECT.
 
+![image](https://github.com/PunamDahal/KathaKosh/assets/104304324/2669f6c8-4a69-4565-98f8-eedf9eccd131)
+
+
+
